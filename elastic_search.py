@@ -5,7 +5,7 @@ import json
 es=Elasticsearch([{'host':'localhost','port':9200}])
 
 es = Elasticsearch(timeout= 600, hosts = "http://localhost:9200/")
-es.indices.delete(index='cs_172')  # delete the previous ont
+#es.indices.delete(index='cs_172')  # delete the previous ont
 #需创建index_mapping结构
 #是否要创建 setting 函数？
 index_mapping= {
