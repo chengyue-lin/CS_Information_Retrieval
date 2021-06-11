@@ -4,7 +4,7 @@
 ## Team member 2 - Chengyue Lin  
 
 
-How to run our code:
+How to run our code: we use Python 3.9 version. 
 
 
 The crawler is done by Xianghu Wang. The elasticsearch part is done by Chengyue Lin.    
@@ -21,3 +21,5 @@ And we put the data (.json) file into the elasticsearch. User can input what que
 We just write a match function to find which URL is match with query.   
 
 Part 3:   
+For the extension part, we implement the multi-threaded crawler.
+
