@@ -4,7 +4,8 @@
 ## Team member 2 - Chengyue Lin  
 
 
-How to run our code: we use Python 3.9 version. 
+How to run our code: we use Python 3.9 version.  "./elastic_search.py --url https://www.ucr.edu --pages 200 --poolLen 8" We use this command to run our code.    
+url is the url seed. pages is number of page user want to crawl.  poolLen is number of threaded.   
 
 
 The crawler is done by Xianghu Wang. The elasticsearch part is done by Chengyue Lin.    
