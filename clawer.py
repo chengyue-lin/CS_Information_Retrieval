@@ -108,7 +108,7 @@ class MyCrawler:
                 #Put the URL into the URL that has been accessed
                 self.linkQuence.addVisitedUrl(visitUrl)
                 print("Visited url count: "+str(self.linkQuence.getVisitedUrlCount()))
-                #未访问的url入列
+                #push into unvisited url link list
                 for link in links:
                     self.linkQuence.addUnvisitedUrl(link)
                 print("%d unvisited links:"%len(self.linkQuence.getUnvisitedUrl()))
@@ -158,8 +158,7 @@ class MyCrawler:
 
 
 
-def main(seeds,crawl_count):
-        poolLen=8
+def crawl(seeds,crawl_count,poolLen):
         dataQueue = Queue()
         t = threading.Thread(target=wirteData, args=(dataQueue,))
         t.start()
@@ -174,5 +173,3 @@ def main(seeds,crawl_count):
         pool.wait()
         dataQueue.put("@@@queueStop@@@")
         print("over")
-if __name__=="__main__":
-        main(["http://www.stanford.edu"],50)
